@@ -1,0 +1,20 @@
+/* navbar styles */
+
+.navbar {
+	background-color: rgb(224, 224, 224);
+}
+.logoimg {
+	padding: 10px;
+}
+
+nav > ul {
+	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+}
+
+nav > ul > li {
+	display:inline;
+	padding: 10px;
+	font-size: 35px;
+}
