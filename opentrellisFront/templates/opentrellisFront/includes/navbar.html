@@ -1,32 +1,17 @@
 {% load static %}
 
-<div id="navbar">
+<div class="sticky-section">
 
-    <!--
-    <a class="logo-left" href="/">
+    <a id="logo" href="/">
         <img 
         src="{% static 'img/logos/opentrellis_logo_words.png' %}" 
         alt="picture not found" 
         height="40"
         >
     </a>
--->
-    <a href="/learning/">Learning</a>
-    <a href="/lending/">Lending</a>
-    <a href="/investing/">Investing</a>
+    <nav>
+      <a href="/learning/">Learning</a>
+      <a href="/lending/">Lending</a>
+      <a href="/investing/">Investing</a>
+    </nav>
 </div>
-
-<script>
-    window.onscroll = function() {myFunction()};
-    
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-    
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-</script>
