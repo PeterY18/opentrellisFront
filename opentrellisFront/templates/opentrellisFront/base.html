@@ -17,10 +17,17 @@
 </head>
 
 <body>
-        {% include "opentrellisFront/includes/navbar.html" %}
+    <div>
+    {% include "opentrellisFront/includes/navbar.html" %}
+    </div>
+
     <div>
         {% block content %}
         {% endblock %}
     </div>
+
+    <footer>
+        {% include "opentrellisFront/includes/footer.html" %}
+    </footer>
 </body>
 </html>

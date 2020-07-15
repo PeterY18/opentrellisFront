@@ -1,3 +1,4 @@
+/* navbar */
 .sticky-section {
   overflow: hidden;
   background-color: #ffffff;
@@ -28,16 +29,30 @@ nav a:hover {
   float: right;
 }
 
-body {
+#logo {
+  float: left;
+  padding: 10px 5px;
+}
+
+
+/* body/structure */
+body, html {
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 .content {
   margin: 50px 17%;
 }
 
-#logo {
-  float: left;
-  padding: 10px 5px;
+/* footer */
+footer {
+  margin-top: auto;
+  background-color: #333;
 }
