@@ -56,3 +56,38 @@ footer {
   margin-top: auto;
   background-color: #333;
 }
+
+.copyright {
+  color: #ffffff;
+  text-align: center;
+}
+
+p > a {
+  color: #ffffff
+}
+
+#footer {
+	padding: 10px;
+}
+
+.vertical_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+
+li a {
+	display: block;
+	color: #FFF;
+	padding: 8px 16px;
+	text-decoration: none;
+	text-align: center;
+}
+
+li a:hover {
+	color: #green;
+}
+
+.column {
+	position: relative;
+}
