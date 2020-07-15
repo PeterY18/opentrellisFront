@@ -23,4 +23,5 @@ urlpatterns = [
     path('learning/', include('opentrellisFront.urls')),
     path('lending/', include('opentrellisFront.urls')),
     path('investing/', include('opentrellisFront.urls')),
+    path('aboutus/', include('opentrellisFront.urls'))
 ]
