@@ -9,5 +9,7 @@ urlpatterns = [
     path('lending/', views.lending, name="lending"),
     path('investing/', views.investing, name="investing"),
     path('aboutus/', views.aboutus, name="aboutus"),
+    path('team/', views.aboutus, name="team"),
+    path('legal/', views.aboutus, name="legal"),
 
 ]

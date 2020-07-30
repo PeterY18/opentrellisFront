@@ -19,3 +19,9 @@ def investing(request):
 
 def aboutus(request):
     return render(request, 'opentrellisFront/aboutus.html', {})
+
+def team(request):
+    return render(request, 'opentrellisFront/team.html', {})
+
+def legal(request):
+    return render(request, 'opentrellisFront/team.html', {})
