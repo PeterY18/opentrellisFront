@@ -24,4 +24,4 @@ def team(request):
     return render(request, 'opentrellisFront/team.html', {})
 
 def legal(request):
-    return render(request, 'opentrellisFront/team.html', {})
+    return render(request, 'opentrellisFront/legal.html', {})
