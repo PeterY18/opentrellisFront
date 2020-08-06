@@ -3,7 +3,7 @@
   overflow: hidden;
   background-color: #ffffff;
   /* the space between navbar and content */
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
@@ -65,12 +65,12 @@ body {
   margin: 0;
   position: relative;
   min-height: 100%;
-  padding-bottom: 12rem;
+  padding-bottom: 11rem;
 }
 
 .content {
   /* the space between navbar and content */
-  margin: 20px 21%;
+  margin: 0px 15vh;
   text-align: center;
 }
 
@@ -163,6 +163,46 @@ body {
 
 
 /* home page */
+@font-face {
+  font-family: Phenomena;
+  src: url(./fonts/Phenomena-Regular.otf);
+}
+
 #introduction {
-  
+  padding: 20% 0px 30%;
+}
+
+.title {
+  font-size: 140px;
+  font-family: Phenomena;
+  color: #009347;
+}
+
+#introduction p {
+  font-size: 40px;
+}
+
+#introduction a {
+  border-radius: 5px;
+  background-color: #00602E;
+  color: #FFFFFF;
+  padding: 12px 15px;
+  font-weight: 400;
+  box-shadow: rgba(0, 96, 46, 0.7) 0px 10px 40px -10px;
+}
+
+#introduction a:hover {
+  background-color: #004722;
+}
+
+#link-button-area {
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.link-buttons {
+  margin: 5px;
 }
