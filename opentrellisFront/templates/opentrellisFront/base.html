@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" charset="utf-8">
 <title>{% block title %}{% endblock %}</title>
 <link rel="icon" type="image/png" href="{% static 'img/logos/favicon/favicon-32.png' %}"
 <!-- custom css -->
@@ -25,9 +25,9 @@
 {% block content %}
 {% endblock %}
 
-<div class="bottom">
+<footer class="bottom">
     {% include "opentrellisFront/includes/footer.html" %}
-</div>
+</footer>
 
 </body>
 </html>
