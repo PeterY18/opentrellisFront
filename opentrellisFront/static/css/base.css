@@ -209,7 +209,7 @@ main {
 }
 
 #introduction a {
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #00602E;
   color: #FFFFFF;
   padding: 12px 15px;
@@ -219,6 +219,7 @@ main {
   transition-duration: 0.2s, 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s, 0s;
+  font-size: 1.3vh;
 }
 
 #introduction a:hover {
