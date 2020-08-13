@@ -279,13 +279,24 @@ img {
 
 .seed-container {
   display: flex;
-  justify-content: center;
   padding: 50px;
 }
 
 .seed-column {
   flex: 1 1 200px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.seed-card {
+  flex: 1 1 100px;
+  text-align: left;
+}
+
+#seeds {
+  width: 100%;
 }
 
 #footer-space {
