@@ -9,16 +9,49 @@
         <h1 class="title">Open Trellis</h1>
         <p>... helping people cultivate new businesses</p>
         <div id="link-button-area">
-            <a href="#learning" class="link-buttons">Learn More</a>
+            <a href="#challenges" class="link-buttons">Learn More</a>
             <a href="#get-involved" class="link-buttons">Get Involved</a>
         </div>
 
     </section>
-    <section id="learning">
-        <h1 style="padding-top: 300px">Learning</h1>
+    <section id="challenges">
+        <div class="content">
+            <div class="card-container">
+                <div class="card">
+                    <img src="{% static 'img/challenge_cards/sapling1outof20.svg' %}" alt="" width="200" class="card-icon">
+                    <h1 class="card-title">Challenge #1</h1>
+                    <h2 class="card-subinfo">Less than 5% of new business raise outisde equity investment</h2>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/challenge_cards/clock1outof4.svg' %}" alt="" width="200" class="card-icon">
+                    <h1 class="card-title">Challenge #2</h1>
+                    <h2 class="card-subinfo">Only 25% of businesses survive 15 years or more</h2>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/challenge_cards/everybody.svg' %}" alt="" width="200" class="card-icon">
+                    <h1 class="card-title">Challenge #3</h1>
+                    <h2 class="card-subinfo">100% of new businesses need new customers</h2>
+                </div>
+            </div>
+            <h1 class="challenge-statement">It’s difficult to test an idea, get new customers, and find credible answers to your questions. A
+                lot of people have advice, and some of them have never owned a business. It’s hard to
+                manage everything that needs to be done each day, while wondering “is this right?”</h1>
+                
+            <h1>We Help Them Cultivate Seeds</h1>
+            <div class="seed-container">
+                <div class="seed-column">
+                    <div class="seed-card">
+                        <!--image and then text-->
+                    </div>
+                </div> 
+                <div class="seed-column"></div> 
+            </div>
+        </div>
+
     </section>
     <section id="lending"></section>
     <section id="investing"></section>
+    <section id="footer-space"></section>
 
 </main>
 {% endblock %}

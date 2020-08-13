@@ -186,12 +186,6 @@ main {
   src: url(./fonts/Phenomena-Regular.otf);
 }
 
-#learning {
-  height: 94vh;
-  width: 100%;
-  background-color: antiquewhite;
-}
-
 #introduction {
   height: 94vh;
   width: 100%;
@@ -236,4 +230,64 @@ main {
 
 .link-buttons {
   margin: 5px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content {
+  margin: 0px 10%;
+}
+
+#challenges {
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.card {
+  flex: 1 1 300px;
+  padding: 16px 0px 30px;
+  margin: 20px 20px;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.card-icon {
+  margin: 0 auto;
+}
+
+.card-title {
+  padding: 20px 0px 10px;
+}
+
+.card-subinfo {
+  padding: 0px 20px 0px;
+}
+
+.challenge-statement {
+  margin: 0px 15.5%;
+  padding-bottom: 100px;
+}
+
+.seed-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.seed-column {
+  flex: 1 1 200px;
+  display: flex;
+}
+
+#footer-space {
+  height: 10vh;
 }
