@@ -186,6 +186,8 @@ main {
   src: url(./fonts/Phenomena-Regular.otf);
 }
 
+
+
 #introduction {
   height: 94vh;
   width: 100%;
@@ -199,20 +201,17 @@ main {
 }
 
 #introduction p {
-  font-size: 2.5vw;
+  font-size: 2vw;
+  padding: 0px 450px;
 }
 
 #introduction a {
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #00602E;
   color: #FFFFFF;
   padding: 12px 15px;
   font-weight: 400;
   box-shadow: rgba(0, 96, 46, 0.7) 0px 10px 40px -10px;
-  transition-property: opacity, transform;
-  transition-duration: 0.2s, 0.2s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s, 0s;
   font-size: 1.3vh;
 }
 
@@ -239,6 +238,8 @@ img {
 .content {
   margin: 0px 10%;
 }
+
+
 
 #challenges {
   width: 100%;
@@ -277,6 +278,12 @@ img {
   padding-bottom: 100px;
 }
 
+
+
+#seeds {
+  width: 100%;
+}
+
 .seed-container {
   display: flex;
   padding: 50px;
@@ -295,10 +302,29 @@ img {
   text-align: left;
 }
 
-#seeds {
-  width: 100%;
+
+.learning-header {
+  padding: 15px;
 }
 
+.learning-subheader {
+  padding: 10px;
+  animation-name: fadein;
+  animation-duration: 3s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateZ(0);
+  }
+}
+
+
 #footer-space {
-  height: 10vh;
+  height: 100vh;
 }
