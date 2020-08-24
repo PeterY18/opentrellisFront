@@ -62,11 +62,82 @@
         </section>
     -->
         <section id="learning">
-            <h1 class="learning-header">Learning</h1>
-            <h2 class="learning-subheader">Ask Questions</h2>
-            <h2 class="learning-subheader">Share Your Insight</h2>
-            <h2 class="learning-subheader">Learn Business Skills</h2>
+            <div class="three-point-container">
+                <div class="three-point-heading">
+                    <h1 class="three-point-header">Learning</h1>
+                    <h2 id="tools" class="three-point-subheader">Ask Questions</h2>
+                    <h2 class="three-point-subheader">Share Your Insight</h2>
+                    <h2 class="three-point-subheader">Learn Business Skills</h2>
+                </div>
+                <div class="three-point-picture">
+                    <img src="{% static 'img/three_points/raising_hands.jpg' %}" alt="" class="learning-image">
+                </div>
+            </div>
         </section>
+        <section id="lending">
+            <div class="three-point-container">
+                <div class="three-point-picture">
+                    <img src="{% static 'img/three_points/signing.jpg' %}" alt="" id="lending-image">
+                </div>
+                <div class="three-point-heading">
+                    <h1 class="three-point-header">Lending</h1>
+                    <h2 class="three-point-subheader">Apply For A Small Business Loan</h2>
+                    <h2 class="three-point-subheader">Learn How We Use Artificial Intelligence</h2>
+                    <h2 class="three-point-subheader">Submit A Question</h2>
+                </div>
+            </div>
+        </section>
+        <section id="investing">
+            <div class="three-point-container">
+                <div class="three-point-heading">
+                    <h1 class="three-point-header">Investing</h1>
+                    <h2 class="three-point-subheader">Prepare For Your Future</h2>
+                    <h2 class="three-point-subheader">Strengthen Your Family</h2>
+                </div>
+                <div lass="three-point-picture">
+                    <img src="{% static 'img/three_points/planning.jpg' %}" alt="" id="investing-image">
+                </div>
+
+            </div>
+        </section>
+    </section>
+    <section id="tabs">
+        <h1>Choose One</h1>
+        <div class="tab">
+            <button class="tablinks" onclick="openProfile(event, 'businessOwner')">I am a business owner</button>
+            <button class="tablinks" onclick="openProfile(event, 'developer')">I am a programmer looking to contribute</button>
+            <button class="tablinks" onclick="openProfile(event, 'volunteer')">I am a volunteer looking to mentor</button>
+        </div>
+
+        <div class="tab-content-area">
+            <div id="businessOwner" class="tabContent">
+                <h2>Business Owner</h2>
+            </div>
+
+            <div id="developer" class="tabContent">
+                <h2>Programmer</h2>
+            </div>
+
+            <div id="volunteer" class="tabContent">
+                <h2>Volunteer</h2>
+            </div>
+        </div>
+
+        <script>
+            function openProfile(event, profileType) {
+                var i, tabContent, tablinks;
+                tabContent = document.getElementsByClassName("tabContent");
+                for (i = 0; i < tabContent.length; i++) {
+                    tabContent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(profileType).style.display = "block";
+                event.currentTarget.className += " active";
+            }
+        </script>
     </section>
     <section id="footer-space"></section>
 
