@@ -1,19 +1,14 @@
 {% load static %}
 
-<header class="sticky-section">
-
-  <div id="logo">
+<header id="navbar">
+  <div class="navbar__logo">
     <a href="/">
-        <img 
-        src="{% static 'img/logos/opentrellis_logo_words.png' %}" 
-        alt="OPEN TRELLIS" 
-        height="48"
-        >
-        </a>
+        <img src="{% static 'img/logos/opentrellis_logo_words.png' %}" alt="OPEN TRELLIS" height="48">
+    </a>
     </div>
-    <nav class="nav"> 
-      <a href="/learning/">Learning</a>
-      <a href="/lending/">Lending</a>
-      <a href="/investing/">Investing</a>
+    <nav class="navbar__nav"> 
+      <a href="/learning/" class="navbar__item">Learning</a>
+      <a href="/lending/" class="navbar__item">Lending</a>
+      <a href="/investing/" class="navbar__item">Investing</a>
     </nav>
   </header>
