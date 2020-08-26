@@ -13,8 +13,11 @@ body {
 
 main {
   display: block;
-  margin: 0px 10%;
   text-align: center;
+}
+
+.content-margin {
+  margin: 0 14%;
 }
 
 /* phenomena font */
@@ -80,10 +83,10 @@ main {
 }
 
 @media only screen and (max-width: 950px) {
-  #logo {
-    margin-left: 1%;
+  .navbar__logo {
+    margin-left: 0%;
   }
-  .nav {
+  .navbar__nav {
     margin-right: 0%;
   }
 }
@@ -93,10 +96,7 @@ main {
 #footer {
   color: #e5e5e5;
   background-color: #333;
-  display: flex;
-  flex-flow: row wrap;
   padding: 20px 30px 15px;
-  justify-content: center;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -104,10 +104,14 @@ main {
   text-align: center;
 }
 
+.footer-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
 .brand {
-  margin-top: 20px;
-  margin-right: 1.25em;
-  margin-bottom: 2em;
+  margin: 20px 1.25em 2.1em 0;
 }
 
 .brand__copyright {
@@ -148,49 +152,55 @@ main {
 
 /* || HOME PAGE */
 
-#introduction {
-  height: 94vh;
-  width: 100%;
+/* hero */
+
+#hero {
+  padding-top: 200px;
 }
 
-.title {
-  padding-top: 20vh;
-  font-size: 5.5vw;
-  font-family: Phenomena;
-  color: #009347;
+.title-container {
+  display: grid;
+  grid-template-columns: 55% 40%;
+  grid-template-rows: 300px;
 }
 
-#introduction p {
-  font-size: 2vw;
-  padding: 0px 450px;
+.title-item-text {
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
 }
 
-#introduction a {
+.title-item-image {
+  grid-area: 1 / 2 / 3 / 2;
+}
+
+.title-button-box {
+  padding-top: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hero__text {
+  text-align: left;
+}
+
+.hero__link {
   border-radius: 5px;
   background-color: #00602e;
   color: #ffffff;
   padding: 12px 15px;
   font-weight: 400;
   box-shadow: rgba(0, 96, 46, 0.7) 0px 10px 40px -10px;
-  font-size: 1.3vh;
-}
-
-#introduction a:hover {
-  background-color: #004722;
-}
-
-#link-button-area {
-  padding-top: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  display: flex;
-  justify-content: center;
-}
-
-.link-buttons {
   margin: 5px;
 }
 
+.hero__link:hover {
+  background-color: #004722;
+  color: #ffffff;
+}
+
+/* challenges */
 
 
 
