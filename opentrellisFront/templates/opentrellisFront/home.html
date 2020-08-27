@@ -7,19 +7,79 @@
     <section id="hero">
         <div class="title-container content-margin">
             <div class="title-item-text">
-                <h1 class="hero__text">The community of entrepreneurs cultivating their businesses and developing a
-                    framework to help one
-                    another</h1>
+                <h1 class="hero__text">The community of entrepreneurs cultivating their businesses and developing framework to help one another</h1>
                 <div class="title-button-box">
                     <a href="#challenges" class="hero__link">Learn More</a>
                     <a href="#get-involved" class="hero__link">Build the Framework</a>
                 </div>
             </div>
-            <div class="title-item-image"></div>
+            <div class="title-item-image">
+                <img src="{% static 'img/hero/empty-trellis.svg' %}" alt="">
+            </div>
         </div>
 
     </section>
-    <section id="challenges"></section>
+    <section id="challenges">
+            <div class="map-container content-margin">
+                <div class="map-item-title">
+                    <h1 class="map-title">Business Owners Face Challenges</h1>
+                </div>
+                <div class="map-item-challenge1 stat-area">
+                    <div class="stat-area__chart">
+                        <svg height="150" width="150" viewBox="0 0 20 20" data-percentage="101">
+                            <circle r="10" cx="10" cy="10" fill="#ddd" />
+                            <circle r="5" cx="10" cy="10" fill="transparent"
+                            stroke="#009347"
+                            stroke-width="10"
+                            stroke-dasharray="-moz-calc(35 * 31.4 / 100) 31.4)"
+                            transform="rotate(-90) translate(-20)" />
+                        </svg>  
+                    </div>
+                    <div class="stat-area__info">
+                        <h2 class="stat-area__subtitle">100% need more customers</h2>
+                    </div>
+                </div>
+                <div class="map-item-challenge2 stat-area">
+                    <div class="stat-area__chart">
+                        <svg height="150" width="150" viewBox="0 0 20 20" data-percentage="25">
+                            <circle r="10" cx="10" cy="10" fill="#ddd" />
+                            <circle r="5" cx="10" cy="10" fill="transparent"
+                            stroke="#009347"
+                            stroke-width="10"
+                            stroke-dasharray="calc(35 * 31.4 / 100) 31.4"
+                            transform="rotate(-90) translate(-20)" />
+                        </svg>  
+                    </div>
+                    <div class="stat-area__info">
+                        <h2 class="stat-area__subtitle">Only 25% will 
+                                                        survive 15 years</h2>
+                    </div>
+                </div>
+                <div class="map-item-challenge3 stat-area">
+                    <div class="stat-area__chart">
+                        <svg height="150" width="150" viewBox="0 0 20 20" data-percentage="5">
+                            <circle r="10" cx="10" cy="10" fill="#ddd" />
+                            <circle r="5" cx="10" cy="10" fill="transparent"
+                            stroke="#009347"
+                            stroke-width="10"
+                            stroke-dasharray="calc(35 * 31.4 / 100) 31.4"
+                            transform="rotate(-90) translate(-20)" />
+                        </svg>  
+                    </div>
+                    <div class="stat-area__info">
+                        <h2 class="stat-area__subtitle">Less than 5% receive outside investment</h2>
+                    </div>
+                </div>
+                <div class="dash1">
+                    <img src="{% static 'img/challenges/dash1.svg' %}" alt="">
+                </div>
+                <div class="dash2">
+                    <img src="{% static 'img/challenges/dash2.svg' %}" alt="">
+                </div>
+
+                <script src="{% static 'js/pie.js' %}"></script>
+            </div>
+    </section>
     <section id="solutions"></section>
     <section id="get-involved"></section>
     <section id="sponsors"></section>
