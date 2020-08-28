@@ -6,22 +6,4 @@ def index(request):
     return HttpResponse("Hello, world. You're at the opentrellis index.")
 
 def home(request):
-    return render(request, 'opentrellisFront/home.html', {})
-
-def learning(request):
-    return render(request, 'opentrellisFront/learning.html', {})
-
-def lending(request):
-    return render(request, 'opentrellisFront/lending.html', {})
-
-def investing(request):
-    return render(request, 'opentrellisFront/investing.html', {})
-
-def aboutus(request):
-    return render(request, 'opentrellisFront/aboutus.html', {})
-
-def team(request):
-    return render(request, 'opentrellisFront/team.html', {})
-
-def legal(request):
-    return render(request, 'opentrellisFront/legal.html', {})
+    return render(request, 'opentrellisFront/index.html', {})
