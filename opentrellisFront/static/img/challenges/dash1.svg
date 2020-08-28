@@ -7,35 +7,35 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="865"
-   height="459"
-   viewBox="0 0 228.86458 121.44375"
-   version="1.1"
-   id="svg8"
+   sodipodi:docname="dash1.svg"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="dash1.svg">
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 264.58333 121.44375"
+   height="459"
+   width="1000">
   <defs
      id="defs2" />
   <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="531.57099"
-     inkscape:cy="218.13203"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     inkscape:document-rotation="0"
-     showgrid="false"
+     inkscape:window-maximized="1"
+     inkscape:window-y="34"
+     inkscape:window-x="10"
+     inkscape:window-height="1396"
+     inkscape:window-width="2540"
      units="px"
-     inkscape:window-width="1060"
-     inkscape:window-height="945"
-     inkscape:window-x="2570"
-     inkscape:window-y="965"
-     inkscape:window-maximized="1" />
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="218.13203"
+     inkscape:cx="198.57099"
+     inkscape:zoom="1"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -49,20 +49,20 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
+     id="layer1"
      inkscape:groupmode="layer"
-     id="layer1">
+     inkscape:label="Layer 1">
     <rect
-       style="fill:#000000;fill-opacity:0;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
-       id="rect10"
-       width="234.49677"
-       height="195.41324"
+       y="25.400764"
        x="-28.406904"
-       y="25.400764" />
+       height="195.41324"
+       width="234.49677"
+       id="rect10"
+       style="fill:#000000;fill-opacity:0;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000" />
     <path
-       style="fill:none;stroke:#555555;stroke-width:1.71657;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6.86629, 6.86629;stroke-dashoffset:13.7325;stroke-opacity:1"
-       d="m 49.416921,28.69164 c 0,0 6.909962,27.821943 83.339799,26.90648 94.25283,-1.128944 91.06144,23.093923 91.06144,23.093923"
+       sodipodi:nodetypes="csc"
        id="path835"
-       sodipodi:nodetypes="csc" />
+       d="m 1.9744102,2.2051692 c 0,0 6.8284839,56.1125068 121.1896298,57.0353028 124.80142,1.007041 134.87475,35.452306 134.87475,35.452306"
+       style="fill:none;stroke:#555555;stroke-width:3.24436;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:12.9775, 12.9775;stroke-dashoffset:25.9548;stroke-opacity:1" />
   </g>
 </svg>
