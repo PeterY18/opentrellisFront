@@ -10,3 +10,15 @@ header {
 section {
   padding: 150px 0;
 }
+
+.theme-toggle {
+
+}
+
+#sun {
+  display: none;
+}
+
+#moon {
+  display: active;
+}

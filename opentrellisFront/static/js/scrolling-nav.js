@@ -27,3 +27,24 @@
   });
 
 })(jQuery); // End of use strict
+
+const btn = document.querySelector(".theme-toggle");
+const currentTheme = localStorage.getItem("theme");
+const theme = document.querySelector("#theme-link");
+var themeHolder;
+
+if (currentTheme == "dark") {
+  theme.href = "/static/css/dark.css";
+}
+
+btn.addEventListener("click", function() {
+  if (theme.getAttribute("href") == "/static/css/light.css") {
+    theme.href = "/static/css/dark.css";
+    themeHolder = "dark";
+  }
+  else {
+    theme.href = "/static/css/light.css";
+    themeHolder = "light";
+  }
+  localStorage.setItem("theme", themeHolder);
+});
