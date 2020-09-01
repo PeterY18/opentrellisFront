@@ -28,16 +28,35 @@
 
 })(jQuery); // End of use strict
 
-const btn = document.querySelector(".theme-toggle");
+var btn = document.querySelector("#moon");
+document.getElementById("moon").style.display = "block";
 const currentTheme = localStorage.getItem("theme");
 const theme = document.querySelector("#theme-link");
 var themeHolder;
 
 if (currentTheme == "dark") {
   theme.href = "/static/css/dark.css";
+  btn = document.querySelector("#sun");
+  document.querySelector("#sun").style.display = "active";
+
 }
 
-btn.addEventListener("click", function() {
+function changeLogo(evt, logo) {
+  var i, themeTogglers, logoHold;
+
+  if (logo == "moon") {
+    logoHold = "sun"
+  }
+  else {
+    logoHold = "moon"
+  }
+
+  themeTogglers = document.getElementsByClassName("theme-toggle");
+  for (i = 0; i < themeTogglers.length; i++) {
+    themeTogglers[i].style.display = "none";
+  }
+
+  document.getElementById(logoHold).style.display = "block";
   if (theme.getAttribute("href") == "/static/css/light.css") {
     theme.href = "/static/css/dark.css";
     themeHolder = "dark";
@@ -47,4 +66,5 @@ btn.addEventListener("click", function() {
     themeHolder = "light";
   }
   localStorage.setItem("theme", themeHolder);
-});
+
+}
