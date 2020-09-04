@@ -37,7 +37,8 @@ var themeHolder;
 if (currentTheme == "dark") {
   theme.href = "/static/css/dark.css";
   btn = document.querySelector("#sun");
-  document.querySelector("#sun").style.display = "active";
+  document.querySelector("#sun").style.display = "block";
+  document.querySelector("#moon").style.display = "none";
 
 }
 
@@ -48,7 +49,7 @@ function changeLogo(evt, logo) {
     logoHold = "sun"
   }
   else {
-    logoHold = "moon"
+    logoHold = "moon";
   }
 
   themeTogglers = document.getElementsByClassName("theme-toggle");

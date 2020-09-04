@@ -11,14 +11,27 @@ section {
   padding: 150px 0;
 }
 
-.theme-toggle {
-
-}
-
 #sun {
   display: none;
 }
 
 #moon {
   display: none;
+}
+
+@font-face {
+  font-family: Phenomena;
+  src: url(./fonts/Phenomena-Regular.otf);
+}
+
+.phenomena {
+  font-family: Phenomena;
+}
+
+.pad-left {
+  padding-left: 10px;
+}
+
+.nav-link {
+  color: #333;
 }
