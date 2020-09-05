@@ -17,6 +17,7 @@
 
   <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Custom styles for this template -->
   <link href="{% static 'css/scrolling-nav.css' %}" rel="stylesheet">
@@ -26,11 +27,10 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-left js-scroll-trigger" href="#page-top"><img src="/static/img/logos/trellis-logo-transparent.png" alt="" height="40">
+      <a class="navbar-left js-scroll-trigger" href="#page-top"><img src="/static/img/logos/logo-trellis.png" alt="" height="40">
       </a>
-      <a href="#page-top" class="navbar-brand pad-left js-scroll-trigger">Trellis</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -55,13 +55,19 @@
   </nav>
 
   <header class="bg-light text-dark">
-    <div class="container text-left">
-      <h2>We are a community of founders culvtivating small businesses together.</h2>
-      <p class="lead">Starting a business is challenging and rewarding. We are building a framework and a shared space to support on another as we hustle.</p>
-      <a href="" class="btn btn-success ">Grow with us</a>
-    </div>
-    <div class="container text-right">
-      <img src="/static/img/" alt="">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="container text-left col-lg-5 mx-auto">
+          <h1 class="hero-title highlight">We are a community of founders culvtivating small businesses together.</h1>
+          <p class="lead">Starting a business is challenging and rewarding. We are building a framework and a shared space to support one another as we hustle.</p>
+          <div class="d-flex justify-content-center">
+            <a href="" class="btn btn-success text-center">Grow with us</a>
+          </div>
+        </div>
+        <div class="container text-center col-lg-4 mx-auto">
+          <img class="hero-trellis-image" src="/static/img/trellis-with-plants.png" alt="">
+        </div>
+      </div>
     </div>
   </header>
 
@@ -104,13 +110,110 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer 
   <footer class="py-5 bg-dark">
+    </div>
     <div class="container">
       <p class="m-0 text-center text-white">©Open Trellis, RVA Works Enterprise Support. All rights reserved.</p>
     </div>
-    <!-- /.container -->
   </footer>
+-->
+
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="font-weight-bold">RVA Works</h6>
+        <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+          consectetur
+          adipisicing elit.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="font-weight-bold">Products</h6>
+        <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Learning</a>
+        </p>
+        <p>
+          <a href="#!">Lending</a>
+        </p>
+        <p>
+          <a href="#!">Investing</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="font-weight-bold">About</h6>
+        <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">About Us</a>
+        </p>
+        <p>
+          <a href="#!">Meet the Team</a>
+        </p>
+        <p>
+          <a href="#!">Legal Information</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="font-weight-bold">Follow Open Trellis</h6>
+        <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="https://twitter.com/RVAWorks"><i class="fa fa-twitter mr-2"></i> Twitter</a>
+        </p>
+        <p>
+          <a href="https://www.facebook.com/RVAWorks"><i class="fa fa-facebook mr-3"></i> Facebook</a>
+        </p>
+        <p>
+          <a href="https://www.instagram.com/rvaworks/"><i class="fa fa-instagram mr-3"></i> Instagram</a>
+        </p>
+        <p>
+          <a href="https://www.meetup.com/1mcrva/"><i class="fa fa-meetup mr-2"></i> Meetup</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+      <p class="m-0 text-center text-dark">©Open Trellis, RVA Works Enterprise Support. All rights reserved.</p>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
   <!-- Bootstrap core JavaScript -->
   <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>

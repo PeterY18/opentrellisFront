@@ -35,3 +35,33 @@ section {
 .nav-link {
   color: #333;
 }
+
+.highlight {
+  color: #149a80;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+.lead {
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.hero-trellis-image {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 576px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .lead {
+    font-size: 1.3rem;
+  }
+}
