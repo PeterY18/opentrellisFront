@@ -65,3 +65,9 @@ section {
     font-size: 1.3rem;
   }
 }
+
+.active {
+  background-color: #18bc9c !important;
+  color: #ffffff !important;
+  border-radius: 0.25rem;
+}

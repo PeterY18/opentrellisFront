@@ -69,3 +69,7 @@ function changeLogo(evt, logo) {
   localStorage.setItem("theme", themeHolder);
 
 }
+
+function navActivator(evt, points) {
+  
+}

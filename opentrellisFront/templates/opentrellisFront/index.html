@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="{% static 'css/scrolling-nav.css' %}" rel="stylesheet">
 
@@ -34,10 +35,10 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse text-white" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Learning</a>
+            <a class="nav-link js-scroll-trigger active" href="#about" onclick="navActivator(evt, 'learning')">Learning</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#services">Lending</a>
@@ -57,14 +58,14 @@
   <header class="bg-light text-dark">
     <div class="container">
       <div class="row align-items-center">
-        <div class="container text-left col-lg-5 mx-auto">
-          <h1 class="hero-title highlight">We are a community of founders culvtivating small businesses together.</h1>
+        <div class="container text-left col-lg-5 mx-auto" data-aos="fade-down" data-aos-duration="1200">
+          <h1 class="hero-title highlight">We are a community of founders cultivating small businesses together.</h1>
           <p class="lead">Starting a business is challenging and rewarding. We are building a framework and a shared space to support one another as we hustle.</p>
           <div class="d-flex justify-content-center">
             <a href="" class="btn btn-success text-center">Grow with us</a>
           </div>
         </div>
-        <div class="container text-center col-lg-4 mx-auto">
+        <div class="container text-center col-lg-4 mx-auto" data-aos="fade-left" data-aos-duration="1200">
           <img class="hero-trellis-image" src="/static/img/trellis-with-plants.png" alt="">
         </div>
       </div>
@@ -100,10 +101,10 @@
   </section>
 
   <section id="contact">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Contact us</h2>
+          <h2 class="wow flash">Contact us</h2>
           <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
         </div>
       </div>
@@ -191,7 +192,7 @@
           <a href="https://www.facebook.com/RVAWorks"><i class="fa fa-facebook mr-3"></i> Facebook</a>
         </p>
         <p>
-          <a href="https://www.instagram.com/rvaworks/"><i class="fa fa-instagram mr-3"></i> Instagram</a>
+          <a href="https://www.instagram.com/rvaworks/"><i class="fa fa-instagram mr-3"></i>Instagram</a>
         </p>
         <p>
           <a href="https://www.meetup.com/1mcrva/"><i class="fa fa-meetup mr-2"></i> Meetup</a>
@@ -224,6 +225,10 @@
 
   <!-- Custom JavaScript for this theme -->
   <script src="{% static 'js/scrolling-nav.js' %}"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 
