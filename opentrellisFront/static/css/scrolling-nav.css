@@ -51,6 +51,11 @@ section {
   font-size: 1.5rem;
 }
 
+.img {
+  width: 100%;
+  height: auto;
+}
+
 .hero-trellis-image {
   width: 100%;
   height: auto;
@@ -70,4 +75,21 @@ section {
   background-color: #18bc9c !important;
   color: #ffffff !important;
   border-radius: 0.25rem;
+}
+
+.white {
+  background-color: white;
+}
+
+.three-points-header {
+  color: #6000c6;
+  font-size: 3rem;
+}
+
+.three-points-font-size {
+  font-size: 1.1rem !important;
+}
+
+.pb-5 {
+  padding-bottom: 20rem !important;
 }
