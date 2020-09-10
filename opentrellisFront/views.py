@@ -6,4 +6,4 @@ def index(request):
     return HttpResponse("Hello, world. You're at the opentrellis index.")
 
 def home(request):
-    return render(request, 'opentrellisFront/index.html', {})
+    return render(request, 'opentrellisFront/home.html', {})
