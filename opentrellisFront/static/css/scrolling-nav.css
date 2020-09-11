@@ -32,10 +32,6 @@ section {
   padding-left: 10px;
 }
 
-.nav-link {
-  color: #333;
-}
-
 .highlight {
   color: #149a80;
 }
@@ -71,18 +67,12 @@ section {
   }
 }
 
-.active {
-  background-color: #18bc9c !important;
-  color: #ffffff !important;
-  border-radius: 0.25rem;
-}
-
 .white {
   background-color: white;
 }
 
 .three-points-header {
-  color: #6000c6;
+  color: #18bc9c;
   font-size: 3rem;
 }
 
@@ -90,6 +80,6 @@ section {
   font-size: 1.1rem !important;
 }
 
-.pb-5 {
+.pb-20 {
   padding-bottom: 20rem !important;
 }
