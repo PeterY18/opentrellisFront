@@ -28,8 +28,8 @@ section {
   font-family: Phenomena;
 }
 
-.pad-left {
-  padding-left: 10px;
+.brand-green {
+  color: #009245;
 }
 
 .highlight {
@@ -67,7 +67,7 @@ section {
   }
 }
 
-.white {
+.bg-white {
   background-color: white;
 }
 
@@ -82,4 +82,15 @@ section {
 
 .pb-20 {
   padding-bottom: 20rem !important;
+}
+
+.btn-brand {
+  background-color: #009245;
+  border-color: #009245;
+  color: #fff;
+}
+
+.btn-brand:hover {
+  background-color: #007939;
+  color: #fff;
 }
