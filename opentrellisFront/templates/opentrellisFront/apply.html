@@ -1,0 +1,220 @@
+{% extends "opentrellisFront/base.html" %}
+{% block title %}Document{% endblock %}
+{% load static %}
+{% block content%}
+<!-- Main -->
+<section id="main" class="wrapper">
+    <div class="inner">
+        <h1 class="major">Apply to Startup Works</h1>
+
+        <p>Joining a group of other founders for 17 weeks of learning and growing a business is a big commitment and you've taken the first step.
+            Once you complete this online application it will be reviewed, and the program facilitators will reach out to schedule an interview.
+        </p>
+        <p>
+            <b>Quick note on cost</b> -- While the program does have a fee, the cost is adjusted based on personal income, which will be discussed during the interview.
+            Financial assistance is available, and to qualify you must bring the prior year's tax return to the interview as proof of previous income.
+        </p>
+        <h2 class="align-center topic-header">Sound good? On to the application!</h2>
+        <br>
+
+        <!-- Apply Form -->
+        <div class="boxfull-volunteer">
+            <form method="post" action="https://formspree.io/donate@rvaworks.org">
+
+                <div class="6u 12u$(xsmall)">
+                    <h3 id="section1">Name <sup>*</sup></h3>
+                    <input type="text" name="name" id="name" value="" placeholder="Your answer" required />
+                    <br>
+                </div>
+
+                <div class="6u 12u$(xsmall)">
+                    <h3 id="section1">Business Name <sup>*</sup></h3>
+                    <input type="text" name="business name" id="business_name" value="" placeholder="Your answer" required />
+                    <br>
+                </div>
+
+                <div class="6u 12u$(xsmall)">
+                    <h3 id="section2">Email <sup>*</sup></h3>
+                    <input type="email" name="_replyto" id="email" value="" placeholder="name@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required />
+                    <br>
+                </div>
+
+                <div class="6u 12u$(xsmall)">
+                    <h3 id="section2">Phone Number <sup>*</sup></h3>
+                    <input type="tel" name="phone" id="phone" value="" placeholder="xxx-xxx-xxxx" onBlur='addDashes(this)' required />
+                    <br>
+                </div>
+
+                <!-- Add dash to phone num -->
+                <script>
+                    function addDashes(f) {
+                        f.value = f.value.replace(/[^\d*$]/g, "").slice(-10);
+    f.value = f.value.slice(0,3)+"-"+f.value.slice(3,6)+"-"+f.value.slice(6);
+                    }
+                </script>
+
+                <div class="12u$">
+                    <h3 id="section1">Address <sup>*</sup></h3>
+                    <input type="text" name="address" id="address" value="" placeholder="Street Address, City, State" required />
+                    <br>
+                </div>
+
+                <div class="12u$">
+                    <h3 id="section2">Are you currently operating a business? <sup>*</sup></h3>
+                    <input type="radio" id="operating_yes" name="have business" value="yes" onClick="haveBizEnable()" required ><label for="operating_yes">Yes</label>
+                    <input type="radio" id="operating_no" name="have business" value="no" onClick="haveBizEnable()"><label for="operating_no">No</label>
+                    <br><br>
+
+                <!-- Have business enable/disable script -->
+                    <script>
+                        function haveBizEnable() {
+                            var open = document.getElementById("operating_yes");
+                            var closed = document.getElementById("operating_no");
+                            var open_field = document.getElementById("have_biz_conditional");
+
+                            if (open.checked) {
+                                open_field.disabled = false;
+                            } else if (closed.checked) {
+                                open_field.disabled = true;
+                            }
+                        }
+
+                    </script>
+
+                <!-- Have business conditional -->
+                    <fieldset class="conditional" id="have_biz_conditional" disabled >
+                        <div class="6u 12u$(xsmall)">
+                            <h3 id="section2">Taxpayer ID <sup>*</sup></h3>
+                            <input type="text" name="tax ID" id="tax_id" placeholder="Your answer" required />
+                            <br>
+                        </div>
+
+                        <div class="6u 12u$(xsmall)">
+                            <h3 id="section2">What year did you start operating? <sup>*</sup></h3>
+                            <input type="text" name="year opened" id="year_opened" placeholder="Your answer" pattern="^\d{4}$" required />
+                            <br>
+                        </div>
+
+                        <div class="6u 12u$(xsmall)">
+                            <h3 id="section2">How many employees do you have, including yourself? <sup>*</sup></h3>
+                            <span>Full-time </span><input type="number" name="full-time employees" id="full_time_num" placeholder="Your answer" required />
+                            <br>
+                            <span>Part-time </span><input type="number" name="part-time employees" id="part_time_num" placeholder="Your answer" required />
+                            <br>
+                        </div>
+
+                        <div class="6u 12u$(xsmall)">
+                            <h3 id="section2">Average pay per employee? <sup>*</sup></h3>
+                            <span>Full-time (per month) </span><input type="number" name="full-time pay" id="full_time_pay" placeholder="Your answer" required />
+                            <br>
+                            <span>Part-time (per hour) </span><input type="number" name="part-time pay" id="part_time_pay" placeholder="Your answer" required />
+                            <br>
+                        </div>
+
+                        <div class="6u 12u$(xsmall)">
+                            <h3 id="section2">Annual gross revenue for all sales? <sup>*</sup></h3>
+                            <input type="number" name="gross revenue" id="gross_revenue" placeholder="Your answer" required />
+                            <br>
+                        </div>
+
+                        <div class="6u 12u$(xsmall)">
+                            <h3 id="section2">How much capital has been invested in the business? <sup>*</sup></h3>
+                            <span>Personal funds</span><input type="number" name="capital - personal funds" id="capital_personal_funds" placeholder="Your answer" required />
+                            <br>
+                            <span>External investment</span><input type="number" name="capital - external investment" id="capital_ext_investment" placeholder="Your answer" required />
+                            <br>
+                            <span>Loans</span><input type="number" name="capital - loans" id="capital_loans" placeholder="Your answer" required />
+                            <br>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="6u 12u$(xsmall)">
+                    <h3 id="section2">What is your individual annual income? <sup>*</sup></h3>
+                    <input type="number" name="applicant income" id="applicant_income" value="" placeholder="Your answer" required />
+                    <br>
+                </div>
+
+                <div class="12u$">
+                    <h3 id="section2">Have you completed a business plan? <sup>*</sup></h3>
+                    <input type="radio" id="plan_yes" value="yes" name="business plan" required >
+                    <label for="plan_yes">Yes</label>
+                    <input type="radio" id="plan_no" value="no" name="business plan">
+                    <label for="plan_no">No</label>
+                    <br><br>
+                </div>
+
+                <div class="12u$">
+                    <h3 id="section2">Do you currently have a business coach? <sup>*</sup></h3>
+                    <input type="radio" id="coach_yes" value="yes" name="have coach" required >
+                    <label for="coach_yes">Yes</label>
+                    <input type="radio" id="coach_no" value="no" name="have coach">
+                    <label for="coach_no">No</label>
+                    <br><br>
+                </div>
+
+                <div class="12u$">
+                    <h3 id="section2">Do you anticipate hiring employees in the next three years? <sup>*</sup></h3>
+                    <input type="radio" id="hiring_yes" name="future hiring" value="yes" onClick="hiringEnable()" required ><label for="hiring_yes">Yes</label>
+                    <input type="radio" id="hiring_no" name="future hiring" value="no" onClick="hiringEnable()" ><label for="hiring_no">No</label>
+                    <br><br>
+
+                <!-- Hiring enable/disable script -->
+                    <script>
+                        function hiringEnable() {
+                            var open = document.getElementById("hiring_yes");
+                            var closed = document.getElementById("hiring_no");
+                            var hiring_field = document.getElementById("hiring_conditional");
+
+                                if (open.checked) {
+                                    hiring_field.disabled = false;
+                                } else if (closed.checked) {
+                                    hiring_field.disabled = true;
+                                }
+                        }
+                    </script>
+
+                <!-- Hiring conditional -->
+                    <fieldset class="conditional" id="hiring_conditional" disabled >
+                        <div class="6u 12u$(xsmall)">
+                            <h3 id="section2">How many anticipated new employees in the next three years?</h3>
+                            <span>Full-time</span><input type="number" name="future full-time hires" id="full_time_hires" placeholder="Your answer" required />
+                            <br>
+                            <span>Part-time</span><input type="number" name="future part-time hires" id="part_time_hires" placeholder="Your answer" required />
+                            <br>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="12u$">
+                    <h3 id="section2">What do you plan to sell, to whom, and how does it compare to competing products or services on the market?</h3>
+                    <textarea name="selling proposition" id="selling_proposition" rows="6" value="" required ></textarea>
+                    <br>
+                </div>
+
+                <div class="12u$">
+                    <h3 id="section2"> What professional experience do you have in the targeted industry?</h3>
+                    <textarea name="relevant experience" id="relevant_experience" rows="3" value="" required ></textarea>
+                    <br>
+                </div>
+
+                <div class="align-center" style="margin-top:10px;">
+                    <ul class="actions">
+                        <li><button class="button" style="background-color: #17bf93;" type="submit">Send</button></li>
+                    </ul>
+                </div>
+
+                <input type="text" name="_gotcha" class="hidden" />
+                <input type="hidden" name="_next" value="http://opentrellis.org/received.html" />
+
+            </form>
+        </div>
+
+        <br><br>
+
+
+    </div>
+</section>
+
+
+{% endblock %}

@@ -16,3 +16,6 @@ def lending(request):
 
 def investing(request):
     return render(request, 'opentrellisFront/investing.html', {})
+
+def apply(request):
+    return render(request, 'opentrellisFront/apply.html', {})
