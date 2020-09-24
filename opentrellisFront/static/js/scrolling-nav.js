@@ -28,6 +28,7 @@
 
 })(jQuery); // End of use strict
 
+/* dark mode that is no longer used
 var btn = document.querySelector("#moon");
 document.getElementById("moon").style.display = "block";
 const currentTheme = localStorage.getItem("theme");
@@ -69,7 +70,4 @@ function changeLogo(evt, logo) {
   localStorage.setItem("theme", themeHolder);
 
 }
-
-function navActivator(evt, points) {
-  
-}
+*/
