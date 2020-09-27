@@ -94,9 +94,22 @@
                             <li>Applying For A Small Business Loan</li>
                             <li>Corporate Intrapreneurship</li>
                         </ul>
-                        <p>Sign up for our newsletter</p>
                     </div>
                     <div class="tab-pane fade pt-3" id="volunteer">
+                        <!-- make sure at least one checkbox is checked -->
+                        <script type="text/javascript">
+                        $(document).ready(function () {
+                            $('#volunteer-submit').click(function() {
+                            checked = $("input[type=checkbox]:checked").length;
+
+                            if(!checked) {
+                                alert("You must check at least one checkbox.");
+                                return false;
+                            }
+
+                            });
+                        });
+                        </script>
                         <h3 class="brand-green">Volunteer</h3>
                         <p>Software developers, UX designers, digital marketers, videographers, copywriters, AI researchers are all making contributions of their time and talent, so we can improve Open Trellis and share it with more people. Please let us know how you’d like to contribute.</p>
                         <form action="">
@@ -159,11 +172,25 @@
                                         </label>
                                     </div>
                                 </fieldset>
-                                <button type="submit" class="btn btn-brand">Submit</button>
+                                <button id="volunteer-submit" type="submit" class="btn btn-brand">Submit</button>
                             </fieldset>
                         </form>
                     </div>
                     <div class="tab-pane fade pt-3" id="mentor">
+                        <script type="text/javascript">
+                        $(document).ready(function () {
+                            $('#mentor-submit').click(function() {
+                            checked = $("input[type=checkbox]:checked").length;
+
+                            if(!checked) {
+                                alert("You must check at least one checkbox.");
+                                return false;
+                            }
+
+                            });
+                        });
+                        </script>
+
                         <h3 class="brand-green">Mentors</h3>
                         <p>Many founders have succeeded in leading their company, and are in a position to help a new founder. From investing the proceeds from the sale of their business, to sharing their expertise, we provide opportunities for mentors to plan for their future and to give back.</p>
                         <form action="">
@@ -209,7 +236,7 @@
                                         </label>
                                     </div>
                                 </fieldset>
-                                <button type="submit" class="btn btn-brand">Submit</button>
+                                <button id="mentor-submit" type="submit" class="btn btn-brand">Submit</button>
                             </fieldset>
                         </form>
                     </div>
@@ -217,7 +244,7 @@
                <div class="pt-5">
                     <h2>Subscribe To Our Newsletter</h2>
                     <div class="btn-group pt-3">
-                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Email" required>
                         <button class="btn btn-brand">Sign up</button>
                     </div>
                </div>
