@@ -29,7 +29,7 @@ section {
 }
 
 .brand-green {
-  color: #009245;
+  color: #009245 !important;
 }
 
 .highlight {
@@ -72,7 +72,6 @@ section {
 }
 
 .three-points-header {
-  color: #18bc9c;
   font-size: 3rem;
 }
 
