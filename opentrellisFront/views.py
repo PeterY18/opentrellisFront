@@ -22,3 +22,6 @@ def apply(request):
 
 def received(request):
     return render(request, 'opentrellisFront/received.html', {})
+
+def legal(request):
+    return render(request, 'opentrellisFront/legal.html', {})
