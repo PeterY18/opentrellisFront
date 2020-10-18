@@ -2,18 +2,20 @@
  * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/templates/scrolling-nav)
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-scrolling-nav/blob/master/LICENSE)
- */
+*/
+
+/* GLOBAL SETTINGS */
+
+html {
+  font-size: 100% !important;
+}
+
 header {
   padding: 156px 0 100px;
 }
 
 section {
   padding: 150px 0;
-}
-
-@font-face {
-  font-family: Phenomena;
-  src: url(./fonts/Phenomena-Regular.otf);
 }
 
 .phenomena {
@@ -24,9 +26,59 @@ section {
   color: #009245 !important;
 }
 
+.brand-green-tint {
+  color: #E5F4EC !important;
+}
+
+.btn-brand {
+  background-color: #009245;
+  border-color: #009245;
+  color: #FFF;
+}
+
+.btn-brand-tint {
+  color: rgb(36, 36, 36) !important;
+  background-color: #c5ebd7;
+  border-color: #c5ebd7;
+}
+ .btn-brand-tint:hover {
+  background-color: #b6dbc8;
+  border-color: #b6dbc8;
+ }
+
+.btn-brand:hover {
+  background-color: #007939;
+  color: #fff;
+}
+
+.bg-white {
+  background-color: white;
+}
+
 .img {
   width: 100%;
   height: auto;
+}
+
+.rem-1-5 {
+  font-size: 1.5rem !important;
+}
+
+.rem-1-3 {
+  font-size: 1.3rem !important;
+}
+
+.rem-1-0 {
+  font-size: 1.0rem !important;
+}
+
+.pb-20 {
+  padding-bottom: 20rem !important;
+}
+
+@font-face {
+  font-family: Phenomena;
+  src: url(./fonts/Phenomena-Regular.otf);
 }
 
 /* HOME PAGE */
@@ -39,13 +91,25 @@ section {
 
 .lead {
   padding-bottom: 20px;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 30px;
+  font-weight: 400;
 }
 
 .hero-trellis-image {
   width: 100%;
   height: auto;
 }
+
+.three-points-header {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.three-points-font-size {
+  font-size: 1.1rem !important;
+}
+
 
 @media only screen and (max-width: 576px) {
   .hero-title {
@@ -57,42 +121,8 @@ section {
   }
 }
 
-.bg-white {
-  background-color: white;
-}
-
-.three-points-header {
-  font-size: 2.5rem;
-}
-
-.three-points-font-size {
-  font-size: 1.1rem !important;
-}
-
-.pb-20 {
-  padding-bottom: 20rem !important;
-}
-
-.btn-brand {
-  background-color: #009245;
-  border-color: #009245;
-  color: #fff;
-}
-
-.btn-brand:hover {
-  background-color: #007939;
-  color: #fff;
-}
-
-.rem-1-5 {
-  font-size: 1.5rem !important;
-}
-
-.rem-1-3 {
-  font-size: 1.3rem !important;
-}
-
 /* Apply */
+
 .conditional,
 #operating_yes:checked ~ .conditional,
 #hiring_yes:checked ~ .conditional {
@@ -121,9 +151,10 @@ section {
   width: 100%;
 }
 
+/* NAVBAR */
 .nav-link-hover {
   background-color: #FFF !important;
-  transition: background-color 0.1s ease-in-out 0s !important;
+  transition: background-color 0.25s ease-in-out 0s !important;
   border-radius: 8px !important;
   color: grey;
   text-decoration: none;
@@ -131,7 +162,7 @@ section {
 }
 
 .nav-link-hover:hover {
-  background-color: #F4FAF7 !important;
+  background-color: #E5F4EC !important;
   color: grey;
 }
 
@@ -139,18 +170,19 @@ section {
   text-decoration: none;
 }
 
-
 .nav-item {
   padding-left: 15px !important;
   padding-right: 15px !important;
-  transition: color 400ms ease-in-out 0s, background-color 400ms ease-in-out 0s;;
 }
 
 .nav-drop {
   -webkit-box-shadow: 0 8px 6px -6px #999;
   -moz-box-shadow: 0 8px 6px -6px #999;
-  box-shadow: 0 9px 10px -13px #999;
+  box-shadow: 0 9px 10px -12px #999;
 }
+
+/* FOOTER */
+
 
 #sun {
   display: none;
