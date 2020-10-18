@@ -11,14 +11,6 @@ section {
   padding: 150px 0;
 }
 
-#sun {
-  display: none;
-}
-
-#moon {
-  display: none;
-}
-
 @font-face {
   font-family: Phenomena;
   src: url(./fonts/Phenomena-Regular.otf);
@@ -32,9 +24,12 @@ section {
   color: #009245 !important;
 }
 
-.highlight {
-  color: #149a80;
+.img {
+  width: 100%;
+  height: auto;
 }
+
+/* HOME PAGE */
 
 .hero-title {
   font-size: 2.5rem;
@@ -45,11 +40,6 @@ section {
 .lead {
   padding-bottom: 20px;
   font-size: 1.5rem;
-}
-
-.img {
-  width: 100%;
-  height: auto;
 }
 
 .hero-trellis-image {
@@ -72,7 +62,7 @@ section {
 }
 
 .three-points-header {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .three-points-font-size {
@@ -129,5 +119,43 @@ section {
 .textarea {
   display: block;
   width: 100%;
-  
+}
+
+.nav-link-hover {
+  background-color: #FFF !important;
+  transition: background-color 0.1s ease-in-out 0s !important;
+  border-radius: 8px !important;
+  color: grey;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-link-hover:hover {
+  background-color: #F4FAF7 !important;
+  color: grey;
+}
+
+.nav-link-hover:link {
+  text-decoration: none;
+}
+
+
+.nav-item {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  transition: color 400ms ease-in-out 0s, background-color 400ms ease-in-out 0s;;
+}
+
+.nav-drop {
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 9px 10px -13px #999;
+}
+
+#sun {
+  display: none;
+}
+
+#moon {
+  display: none;
 }
