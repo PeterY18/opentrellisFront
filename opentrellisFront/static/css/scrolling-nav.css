@@ -5,6 +5,13 @@
 */
 
 /* GLOBAL SETTINGS */
+:root {
+  --brand-green: #009245;
+  --green-shade: #008139;
+  --green-tint-light: #c2e8cc;
+  --green-tint-dark :#6fcb8b;
+
+}
 
 html {
   font-size: 100% !important;
@@ -15,7 +22,15 @@ header {
 }
 
 section {
-  padding: 150px 0;
+  padding: 125px 0;
+}
+
+a {
+  color: var(--brand-green);
+}
+
+.nb-section {
+  padding: 125px 0 0 !important;
 }
 
 .phenomena {
@@ -23,31 +38,32 @@ section {
 }
 
 .brand-green {
-  color: #009245 !important;
+  color: var(--brand-green) !important;
 }
 
 .brand-green-tint {
-  color: #E5F4EC !important;
+  color: var(--green-tint-light) !important;
 }
 
 .btn-brand {
-  background-color: #009245;
-  border-color: #009245;
+  background-color: var(--brand-green);
+  border-color: var(--brand-green);
   color: #FFF;
 }
 
 .btn-brand-tint {
   color: rgb(36, 36, 36) !important;
-  background-color: #c5ebd7;
-  border-color: #c5ebd7;
+  background-color: var(--green-tint-dark);
+  border-color: var(--green-tint-dark);
+  font-size: 1rem !important;
 }
  .btn-brand-tint:hover {
-  background-color: #b6dbc8;
-  border-color: #b6dbc8;
+  background-color: var(--green-tint-light);
+  border-color: var(--green-tint-light);
  }
 
 .btn-brand:hover {
-  background-color: #007939;
+  background-color: var(--green-shade);
   color: #fff;
 }
 
@@ -85,12 +101,18 @@ section {
 
 .hero-title {
   font-size: 2.5rem;
-  padding-bottom: 20px;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
   font-weight: 600;
 }
 
 .lead {
-  padding-bottom: 20px;
+  margin-bottom: 1.25rem;
   font-size: 1.25rem;
   line-height: 30px;
   font-weight: 400;
@@ -110,6 +132,9 @@ section {
   font-size: 1.1rem !important;
 }
 
+.video-shadow {
+  box-shadow: 0px 0px 10px black;
+}
 
 @media only screen and (max-width: 576px) {
   .hero-title {
@@ -178,7 +203,7 @@ section {
 .nav-drop {
   -webkit-box-shadow: 0 8px 6px -6px #999;
   -moz-box-shadow: 0 8px 6px -6px #999;
-  box-shadow: 0 9px 10px -12px #999;
+  box-shadow: 0 9px 10px -14px #999;
 }
 
 /* FOOTER */
