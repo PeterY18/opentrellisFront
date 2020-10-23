@@ -25,3 +25,9 @@ def received(request):
 
 def legal(request):
     return render(request, 'opentrellisFront/legal.html', {})
+
+def about(request):
+    return render(request, 'opentrellisFront/about.html', {})
+
+def team(request):
+    return render(request, 'opentrellisFront/team.html', {})
