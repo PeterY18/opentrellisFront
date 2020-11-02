@@ -206,8 +206,11 @@ a {
   box-shadow: 0 9px 10px -14px #999;
 }
 
-/* FOOTER */
-
+/* Meet the Team */
+#profile > img {
+  width: 40;
+  height: 100%;
+}
 
 #sun {
   display: none;
