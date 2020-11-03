@@ -33,6 +33,12 @@ a {
   padding: 125px 0 0 !important;
 }
 
+.nt-section {
+  padding-top: 0px;
+  padding-left: 125px;
+  padding-right: 125px;
+}
+
 .phenomena {
   font-family: Phenomena;
 }
