@@ -212,6 +212,10 @@ a {
   box-shadow: 0 9px 10px -14px #999;
 }
 
+.indent {
+  text-indent: 1.5rem;
+}
+
 /* Meet the Team */
 #profile > img {
   width: 40;
