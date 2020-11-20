@@ -1,9 +1,83 @@
 {% extends "opentrellisFront/base.html" %}
+{% block title %}Trellis - Learning{% endblock %}
 {% load static %}
-{% block title %}Open Trellis | Learning{% endblock %}
+{% block content%}
+<section id="learning-intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="brand-green">Learning</h2>
+                <h3 class="rem-1-5">Business founders are continuously gathering new information, testing assumptions, making adjustments and measuring results. It can be difficult to get straightforward answers to our questions. So, we’ve developed ways to collaborate with one another, to help cultivate each other’s businesses, and to learn from each other.</h3>
+            </div>
+        </div>
+    </div>
+</section>
 
-{% block content %}
-<div class="content">
-    <h1 class="head">More Content Coming Soon :)</h1>
-</div>
+<section id="online" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="brand-green">Online Courses</h2>
+                <p>For the founder looking to launch a small business idea, to test it in the marketplace, and to formalize a side hustle, we’ve developed a 12 week accelerator program. We cover a range of topics that prepare the founder to reach customers, to make sales, to register their business, to develop a break-even analysis, and to prepare for engagement with professional service providers. Learn directly from group facilitators who have started their own companies, and from guest speakers - experts in their respective fields.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="consulting">
+     <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="brand-green">Consulting</h2>
+                <p>Our team represents a range of functional disciplines in business strategy, finance, technology and economic development. Having worked across five continents, we have assisted hundreds of new and small business owners, and regularly add to our team of entrepreneurs. For those small business owners, corporate executives and economic development professionals, seeking pont expertise, we provide intensive consulting projects.</p>
+                <ul>
+                    <li>Lean Canvas & Business Model Validation</li>
+                    <li>Design Thinking</li>
+                    <li>Financial Valuation</li>
+                    <li>Risk Modeling</li>
+                    <li>IT Shared Services</li>
+                    <li>Ecosystem Evaluation & Development</li>
+                    <li>Corporate Intrapreneurship</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="richmond">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="brand-green">Richmond, Virginia</h2>
+                <p>RVA Works has helped over 250 entrepreneurs present their businesses, and has built a community of over 6,000 founders and those supporting them. By assisting in the organization of our Richmond community of 1 Million Cups, we provide an inclusive learning environment for founders to learn from each other, to present their business (no pitches), to generate feedback, and for audience members to build local connections.</p>
+                <p>Through our core acceleration program, we have assisted business owners starting or formalizing their business:</p>
+                <ul>
+                    <li>124 Founders have entered the core training program</li>
+                    <li>Two-thirds of graduates start their business</li>
+                    <li>38% - The average annual income increase for graduates who launched their business*</li>
+                    <small class="text-muted">*Past performance is not a guarantee of future results</small>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="application" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="brand-green">Application</h2>
+                <p>Interested in:</p>
+                <ul>
+                    <li>Applying to an online course</li>
+                    <li>One-on-one new business coaching</li>
+                    <li>Growing my small business through a consulting project</li>
+                    <li>Cultivating a community of local founders in my area</li>
+                </ul>
+                <a href="/apply/" class="btn btn-brand">Apply Now</a>
+            </div>
+        </div>
+    </div>
+
+</section>
 {% endblock %}

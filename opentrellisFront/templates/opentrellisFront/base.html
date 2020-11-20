@@ -2,28 +2,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" charset="utf-8">
-<title>{% block title %}{% endblock %}</title>
-<link rel="icon" type="image/png" href="{% static 'img/logos/favicon/favicon-32.png' %}"
-<!-- custom css -->
-<link rel="stylesheet" href="{% static 'css/base.css' %}">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Google Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-<!--
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="{% static 'img/logos/favicon-32.png' %}">
 
-<script src="{% static 'js/base.js' %}"></script>
--->
+    <title>{% block title %}{% endblock %}</title>
 
+    <!-- Bootstrap core CSS -->
+    <link id="theme-link" class="light" href="{% static 'css/light.css' %}" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/scrolling-nav.css' %}" rel="stylesheet">
+
+    <!-- Application Form-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
-
-<body>
+<body class="d-flex flex-column min-vh-100">
 
 {% include "opentrellisFront/includes/navbar.html" %}
 
@@ -31,6 +32,20 @@
 {% endblock %}
 
 {% include "opentrellisFront/includes/footer.html" %}
+
+<!-- Bootstrap core JavaScript -->
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+<!-- Plugin JavaScript -->
+<script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+<!-- Custom JavaScript for this theme -->
+<script src="{% static 'js/scrolling-nav.js' %}"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
 
 </body>
 </html>

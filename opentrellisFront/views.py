@@ -17,11 +17,17 @@ def lending(request):
 def investing(request):
     return render(request, 'opentrellisFront/investing.html', {})
 
-def aboutus(request):
-    return render(request, 'opentrellisFront/aboutus.html', {})
+def apply(request):
+    return render(request, 'opentrellisFront/apply.html', {})
 
-def team(request):
-    return render(request, 'opentrellisFront/team.html', {})
+def received(request):
+    return render(request, 'opentrellisFront/received.html', {})
 
 def legal(request):
     return render(request, 'opentrellisFront/legal.html', {})
+
+def about(request):
+    return render(request, 'opentrellisFront/about.html', {})
+
+def team(request):
+    return render(request, 'opentrellisFront/team.html', {})

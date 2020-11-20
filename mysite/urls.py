@@ -19,11 +19,4 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('opentrellisFront.urls')),
-    path('opentrellis/', include('opentrellisFront.urls')),
-    path('learning/', include('opentrellisFront.urls')),
-    path('lending/', include('opentrellisFront.urls')),
-    path('investing/', include('opentrellisFront.urls')),
-    path('aboutus/', include('opentrellisFront.urls')),
-    path('team/', include('opentrellisFront.urls')),
-    path('legal/', include('opentrellisFront.urls')),
 ]
