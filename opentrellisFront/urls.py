@@ -11,4 +11,6 @@ urlpatterns = [
     path('apply/', views.apply, name='apply'),
     path('received/', views.received, name='received'),
     path('legal/', views.legal, name='legal'),
+    path('about/', views.about, name='about'),
+    path('team/', views.team, name='team'),
 ]
