@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    image: trellis-landing-page
+    container_name: trellis-lp-web
+    command: >
+      sh -c "
+      gunicorn mysite.wsgi:application --bind 0.0.0.0:8765"
+    ports:
+      - "8007:8765"

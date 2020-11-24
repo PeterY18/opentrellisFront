@@ -28,6 +28,12 @@ WORKDIR /app
 # copy project
 COPY . .
 
+# Collect static
+RUN python manage.py collectstatic --noinput
+
 # add and run as non-root user
 RUN adduser -D trellis
 USER trellis
+
+# Local run
+CMD gunicorn mysite.wsgi:application --bind 0.0.0.0:$PORT
