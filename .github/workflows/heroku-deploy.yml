@@ -3,9 +3,9 @@ env:
   branch: jw
   app_name: trellis-landing-page
 on:
-  push:
-    branches:
-      - ${{ env.branch }}
+#   push:
+#     branches:
+#       - ${{ env.branch }}
   workflow_dispatch:
     inputs:
       home:
