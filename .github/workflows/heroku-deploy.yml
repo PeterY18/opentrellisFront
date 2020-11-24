@@ -6,6 +6,12 @@ on:
   push:
     branches:
       - ${{ env.branch }}
+  workflow_dispatch:
+    inputs:
+      home:
+        description: 'location'
+        required: false
+        default: 'The Octoverse'
 
 jobs:
   deploy:
