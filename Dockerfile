@@ -1,8 +1,9 @@
-# pull official base image
-FROM python:3.8-alpine
+# pull official base image and install dependencies
+FROM python:3.8-alpine AS build-python
+COPY ./requirements.txt /
+RUN pip wheel --no-cache-dir --no-deps --wheel-dir /wheels -r requirements.txt
 
-# set work directory
-WORKDIR /app
+FROM python:3.8-alpine
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -16,9 +17,13 @@ RUN apk update \
     && pip install psycopg2 \
     && apk del build-deps
 
-# install dependencies
-COPY ./requirements.txt .
-RUN pip install -r requirements.txt
+# Pull in dependencies
+COPY --from=build-python /wheels /wheels
+COPY --from=build-python requirements.txt .
+RUN pip install --no-cache /wheels/*
+
+# set work directory
+WORKDIR /app
 
 # copy project
 COPY . .
