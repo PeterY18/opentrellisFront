@@ -1,0 +1,18 @@
+name: Heroku Deploy
+
+on:
+  push:
+    branches:
+      #- master
+      - jw
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Heroku
+        run: |
+          apt-get update -qy
+          apt-get install -y ruby-dev
+          gem install dpl
+          dpl --provider=heroku --app=trellis-landing-page --api-key=$HEROKU_AUTH_TOKEN
