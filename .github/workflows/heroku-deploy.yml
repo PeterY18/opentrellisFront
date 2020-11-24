@@ -2,12 +2,14 @@ name: Heroku Deploy
 env:
   branch: jw
   app_name: trellis-landing-page
+
 on:
-#   push:
-#     branches:
-#       - ${{ env.branch }}
   workflow_dispatch:
     inputs:
+      name:
+        description: 'Person to greet'
+        required: false
+        default: 'Mona the Octocat'
       home:
         description: 'location'
         required: false
