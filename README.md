@@ -4,18 +4,21 @@ Open Trellis is an upcoming project designed to help business owners. The purpos
 # Local
 For an automated start run:
 ```
-docker-compose -p trellis-landing-page up
+docker-compose -p trellis-landing-page up -d
 ```
 
 To manually start the app run:
 ```
 docker build -t trellis-landing-page:latest .
 docker run -d --name trellis-lp-web -e "PORT=8765" -e "DEBUG=1" -p 8007:8765 trellis-landing-page:latest
-docker exec -it trellis-lp-web python manage.py collectstatic --noinput
-docker exec -it trellis-lp-web gunicorn mysite.wsgi:application --bind 0.0.0.0:$PORT
 ```
 
 # Heroku
+To deploy manually run:
+```
+git push heroku:master
+```
+
 https://testdriven.io/blog/deploying-django-to-heroku-with-docker/
 
 # trigger pipeline

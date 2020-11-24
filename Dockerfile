@@ -35,5 +35,5 @@ RUN python manage.py collectstatic --noinput
 RUN adduser -D trellis
 USER trellis
 
-# Local run
+# Run
 CMD gunicorn mysite.wsgi:application --bind 0.0.0.0:$PORT
