@@ -14,12 +14,9 @@ docker run -d --name trellis-lp-web -e "PORT=8765" -e "DEBUG=1" -p 8007:8765 tre
 ```
 
 # Heroku
+App in Heroku is based on this [tutorial](https://testdriven.io/blog/deploying-django-to-heroku-with-docker). Deployments are automatic based on PRs to `master` branch.
+
 To deploy manually run:
 ```
 git push heroku:master
 ```
-
-https://testdriven.io/blog/deploying-django-to-heroku-with-docker/
-
-# trigger pipeline
-.
