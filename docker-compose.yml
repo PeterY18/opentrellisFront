@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    image: trellis-landing-page
+    container_name: trellis-lp-web
+    environment:
+      - PORT=8765
+    ports:
+      - "8007:8765"

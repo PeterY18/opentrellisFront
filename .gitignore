@@ -7,3 +7,4 @@ db.sqlite3
 media
 trellis-front
 myvenv
+env/
