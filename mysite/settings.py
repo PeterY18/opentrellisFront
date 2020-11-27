@@ -28,7 +28,6 @@ DEBUG = int(os.environ.get('DEBUG', default=0))
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'trellis-landing-page.herokuapp.com', 'test.opentrellis.org']
 
-
 # Application definition
 
 INSTALLED_APPS = [
