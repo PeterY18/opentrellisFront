@@ -6,11 +6,11 @@
 
 /* GLOBAL SETTINGS */
 :root {
-  --brand-green: #009245;
-  --green-shade: #008139;
-  --green-tint-light: #c2e8cc;
-  --green-tint-dark :#6fcb8b;
-
+  --brand-green: #14552a;
+  --green-shade: #124c25;
+  --green-tint-light: #9dd1ab;
+  --green-tint-dark :#57b273;
+  --brand-grey: #30302f;
 }
 
 html {
@@ -29,6 +29,11 @@ a {
   color: var(--brand-green);
 }
 
+p, h2, h3, li {
+  color: var(--brand-grey);
+  font-family: Poppins;
+}
+
 .nb-section {
   padding: 125px 0 0 !important;
 }
@@ -43,8 +48,20 @@ a {
   font-family: Phenomena;
 }
 
+.poppins {
+  font-family: Poppins;
+}
+
+.poppins-bold {
+  font-family: Poppins-bold;
+}
+
 .brand-green {
   color: var(--brand-green) !important;
+}
+
+.brand-grey {
+  color: var(--brand-grey);
 }
 
 .brand-green-tint {
@@ -62,6 +79,7 @@ a {
   background-color: var(--green-tint-dark);
   border-color: var(--green-tint-dark);
   font-size: 1rem !important;
+  font-family: Poppins;
 }
  .btn-brand-tint:hover {
   background-color: var(--green-tint-light);
@@ -103,18 +121,30 @@ a {
   src: url(./fonts/Phenomena-Regular.otf);
 }
 
+@font-face {
+  font-family: Poppins;
+  src: url(./fonts/Poppins-Regular.ttf)
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(./fonts/Poppins-Bold.ttf)
+}
+
 /* HOME PAGE */
 
 .hero-title {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin-bottom: 1.25rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin-bottom: 1.25rem;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: Poppins-Bold;
+  colo: var(--brand-green);
 }
 
 .lead {
@@ -122,6 +152,8 @@ a {
   font-size: 1.25rem;
   line-height: 30px;
   font-weight: 400;
+  font-family: Poppins;
+  color: var(--brand-grey) !important;
 }
 
 .hero-trellis-image {
@@ -130,8 +162,9 @@ a {
 }
 
 .three-points-header {
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: 2.4rem;
+  font-weight: 500;
+  font-family: Poppins-Bold;
 }
 
 .three-points-font-size {
@@ -187,14 +220,14 @@ a {
   background-color: #FFF !important;
   transition: background-color 0.25s ease-in-out 0s !important;
   border-radius: 8px !important;
-  color: grey;
+  color: var(--brand-grey);
   text-decoration: none;
   padding: 10px;
 }
 
 .nav-link-hover:hover {
   background-color: #E5F4EC !important;
-  color: grey;
+  color: var(--brand-grey);
 }
 
 .nav-link-hover:link {

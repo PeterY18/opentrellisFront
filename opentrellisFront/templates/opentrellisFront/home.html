@@ -6,33 +6,39 @@
 <header class=" text-dark">
 <div class="container">
     <div class="row align-items-center">
-    <div class="container text-left col-lg-6 mx-auto" data-aos="fade-down" data-aos-duration="1200">
-        <h1 class="hero-title brand-green">We are a community of founders cultivating small businesses together.</h1>
-        <p class="lead">Starting a business is challenging and rewarding. We are building a framework and a shared space to support one another as we hustle.</p>
-        <div class="d-flex justify-content-left">
-        <a href="#tabs" class="btn btn-brand-tint text-center js-scroll-trigger">Grow with us</a>
+        <div class="container text-left col-lg-6 mx-auto" data-aos="fade-down" data-aos-duration="1200">
+            <h1 class="hero-title brand-green poppins-bold">We are a community of founders cultivating small businesses together.</h1>
+            <p class="lead poppins brand-grey">Starting a business is challenging and rewarding. We are building a framework and a shared space to support one another as we hustle.</p>
+            <div class="d-flex justify-content-left">
+            <a href="#tabs" class="btn btn-brand-tint text-center js-scroll-trigger">Grow with us</a>
+            </div>
+        </div>
+        <div class="container text-center col-lg-4 mx-auto" data-aos="fade-left" data-aos-duration="1200">
+            <img class="hero-trellis-image" src="{% static 'img/trellis-with-plants.png' %}" alt="">
         </div>
     </div>
-    <div class="container text-center col-lg-4 mx-auto" data-aos="fade-left" data-aos-duration="1200">
-        <img class="hero-trellis-image" src="{% static 'img/trellis-with-plants.png' %}" alt="">
-    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="mx-auto">
+            <img src="{% static 'img/sponsor_banner/banner_transparent.png' %}" alt="">
+        </div>
     </div>
 </div>
 </header>
-
 <section id="core-points" class="bg-light">
 <div class="container">
     <div class="row align-items-center text-dark">
-        <div class="col-lg-3 text-center">
+        <div class="col-lg-4 text-center">
             <div class="three-points-font-size">
             <h1 class="three-points-header brand-green"><a class="brand-green" href="/learning/">Learning</a></h1>
             <p class="lead">Learn Business Skills</p>
             </div>
         </div>
-        <div class="col-lg-5 mx-auto text-center">
+        <div class="col-lg-4 mx-auto text-center">
             <img class="img" src="{% static 'img/trellis-3-points.png' %}" alt="" data-aos="zoom-in-down" data-aos-duration="1400">
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-4">
             <div class="text-center pb-20 three-points-font-size">
             <h1 class="three-points-header brand-green"><a class="brand-green" href="/lending/">Lending</a></h1>
             <p class="lead">Apply For A Business Loan</p>
@@ -66,13 +72,13 @@
                 Learn about what Open Trellis means for you. I am a...</h2>
                 <ul class="nav justify-content-center pt-3">
                     <li class="nav-item">
-                        <a href="#founder" class="nav-link-hover rem-1-3" data-toggle="tab">Founder</a>
+                        <a href="#founder" class="nav-link-hover rem-1-3 poppins" data-toggle="tab">Founder</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#volunteer" class="nav-link-hover rem-1-3" data-toggle="tab">Volunteer</a>
+                        <a href="#volunteer" class="nav-link-hover rem-1-3 poppins" data-toggle="tab">Volunteer</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#mentor" class="nav-link-hover rem-1-3" data-toggle="tab">Mentor</a>
+                        <a href="#mentor" class="nav-link-hover rem-1-3 poppins" data-toggle="tab">Mentor</a>
                     </li>
                </ul>
                <div id="myTabContent" class="tab-content text-left">
@@ -92,149 +98,14 @@
                         <a href="/learning" class="btn btn-brand">Learn More</a>
                     </div>
                     <div class="tab-pane fade pt-3" id="volunteer">
-                        <!-- make sure at least one checkbox is checked -->
-                        <script type="text/javascript">
-                        $(document).ready(function () {
-                            $('#volunteer-submit').click(function() {
-                            checked = $("input[type=checkbox]:checked").length;
-
-                            if(!checked) {
-                                alert("You must check at least one checkbox.");
-                                return false;
-                            }
-
-                            });
-                        });
-                        </script>
-                        <h3 class="brand-green">Volunteer</h3>
-                        <p>Software developers, UX designers, digital marketers, videographers, copywriters, AI researchers are all making contributions of their time and talent, so we can improve Open Trellis and share it with more people. Please let us know how you’d like to contribute.</p>
-                        <form action="">
-                            <fieldset>
-                                <div class="form-group">
-                                    <label>First Name</label>
-                                    <input type="text" class="form-control col-4" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Last Name</label>
-                                    <input type="text" class="form-control col-4" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Email address</label>
-                                    <input type="email" class="form-control col-4" id="" aria-describedby="emailHelp" placeholder="Enter email" required>
-                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                </div>
-                                <fieldset class="form-group">
-                                    <legend>Ways you would like to contribute</legend>
-                                    <div class="form-check">
-                                        <label for="" class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"> 
-                                            Backend Python/Django 
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label for="" class="form-check-label">
-                                            <input type="checkbox" class="form-check-input">
-                                            Frontend HTML/CSS/JS 
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label for="" class="form-check-label">
-                                            <input type="checkbox" class="form-check-input">
-                                            Videography & Photography 
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label for="" class="form-check-label">
-                                            <input type="checkbox" class="form-check-input">
-                                            Social Media Production 
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label for="" class="form-check-label">
-                                            <input type="checkbox" class="form-check-input">
-                                            Copyrighting & Blogging
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label for="" class="form-check-label">
-                                            <input type="checkbox" class="form-check-input">
-                                            Financial Modeling 
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label for="" class="form-check-label">
-                                            <input type="checkbox" class="form-check-input">
-                                            Artificial Intelligence
-                                        </label>
-                                    </div>
-                                </fieldset>
-                                <button id="volunteer-submit" type="submit" class="btn btn-brand">Submit</button>
-                            </fieldset>
-                        </form>
+                        <center>
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMNVRYRNL5Ffx4XDpWGBg2Q7NQCG8B0CQmxgUhXmv3YOhXLw/viewform?embedded=true" width="640" height="1042" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        </center>
                     </div>
                     <div class="tab-pane fade pt-3" id="mentor">
-                        <script type="text/javascript">
-                        $(document).ready(function () {
-                            $('#mentor-submit').click(function() {
-                            checked = $("input[type=checkbox]:checked").length;
-
-                            if(!checked) {
-                                alert("You must check at least one checkbox.");
-                                return false;
-                            }
-
-                            });
-                        });
-                        </script>
-
-                        <h3 class="brand-green">Mentors</h3>
-                        <p>Many founders have succeeded in leading their company, and are in a position to help a new founder. From investing the proceeds from the sale of their business, to sharing their expertise, we provide opportunities for mentors to plan for their future and to give back.</p>
-                        <form action="">
-                            <fieldset>
-                                 <div class="form-group">
-                                    <label>First Name</label>
-                                    <input type="text" class="form-control col-4" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Last Name</label>
-                                    <input type="text" class="form-control col-4" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Email address</label>
-                                    <input type="email" class="form-control col-4" id="" aria-describedby="emailHelp" placeholder="Enter email" required>
-                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                </div>
-                                <fieldset class="form-group">
-                                    <legend>Ways you would like to contribute</legend>
-                                    <div class="form-check">
-                                        <label for="" class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"> 
-                                            Share my experience with a founder
-                                        </label>
-                                    </div>
-                                     <div class="form-check">
-                                        <label for="" class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"> 
-                                            Make referrals to benefit a founder
-                                        </label>
-                                    </div>
-                                      <div class="form-check">
-                                        <label for="" class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"> 
-                                            Serve as a guest spekaer
-
-                                        </label>
-                                    </div>
-                                       <div class="form-check">
-                                        <label for="" class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"> 
-                                            Discuss investment opportunities
-                                        </label>
-                                    </div>
-                                </fieldset>
-                                <button id="mentor-submit" type="submit" class="btn btn-brand">Submit</button>
-                            </fieldset>
-                        </form>
+                        <center>
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd8ouBjPHcA5rgMYcsgf7HJnOWYmtce6y8tP_SUkXHpv2eq1w/viewform?embedded=true" width="640" height="934" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        </center>
                     </div>
                </div>
             </div>
