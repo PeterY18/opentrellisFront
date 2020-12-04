@@ -9,7 +9,8 @@
   --brand-green: #14552a;
   --green-shade: #124c25;
   --green-tint-light: #9dd1ab;
-  --green-tint-dark :#57b273;
+  --green-tint-dark:#57b273;
+  --brand-orange: #E48525;
   --brand-grey: #30302f;
 }
 
@@ -35,13 +36,11 @@ p, h2, h3, li {
 }
 
 .nb-section {
-  padding: 125px 0 0 !important;
+  padding: 125px 0 !important;
 }
 
 .nt-section {
-  padding-top: 0px;
-  padding-left: 125px;
-  padding-right: 125px;
+  padding: 125px;
 }
 
 .phenomena {
@@ -60,12 +59,20 @@ p, h2, h3, li {
   color: var(--brand-green) !important;
 }
 
+.brand-orange {
+  color: var(--brand-orange) !important;
+}
+
 .brand-grey {
   color: var(--brand-grey);
 }
 
 .brand-green-tint {
   color: var(--green-tint-light) !important;
+}
+
+.brand-green-tint-dark {
+  color: var(--green-tint-dark) !important;
 }
 
 .btn-brand {
@@ -75,15 +82,36 @@ p, h2, h3, li {
 }
 
 .btn-brand-tint {
-  color: rgb(36, 36, 36) !important;
+  color:#fff !important;
   background-color: var(--green-tint-dark);
   border-color: var(--green-tint-dark);
-  font-size: 1rem !important;
   font-family: Poppins;
 }
  .btn-brand-tint:hover {
   background-color: var(--green-tint-light);
   border-color: var(--green-tint-light);
+ }
+
+ .btn-brand-orange {
+  color:#fff !important;
+  background-color: var(--brand-orange);
+  border-color: var(--brand-orange);
+  font-family: Poppins;
+}
+ .btn-brand-orange:hover {
+  background-color: var(--brand-orange);
+  border-color: var(--brand-orange);
+ }
+
+ .btn-brand-green {
+  color:#fff !important;
+  background-color: var(--brand-green);
+  border-color: var(--brand-green);
+  font-family: Poppins;
+}
+ .btn-brand-green:hover {
+  background-color: var(--brand-green);
+  border-color: var(--brand-green);
  }
 
 .btn-brand:hover {
@@ -216,6 +244,19 @@ p, h2, h3, li {
 }
 
 /* NAVBAR */
+
+.donate {
+  background-color:var(--green-tint-dark) !important;
+  border-radius: 8px !important;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.donate:hover {
+  color: #fff;
+}
+
 .nav-link-hover {
   background-color: #FFF !important;
   transition: background-color 0.25s ease-in-out 0s !important;
@@ -233,6 +274,18 @@ p, h2, h3, li {
 .nav-link-hover:link {
   text-decoration: none;
 }
+
+.tab-link {
+  transition: background-color 0.25s ease-in-out 0s !important;
+  border-radius: 8px !important;
+  text-decoration: none;
+  text-decoration-color: var(--green-shade);
+  text-underline-position: under;
+  color: var(--green-tint-dark) !important;
+  padding: 10px 20px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{color:#fff !important;background-color: var(--green-tint-dark)}
 
 .nav-item {
   padding-left: 15px !important;
