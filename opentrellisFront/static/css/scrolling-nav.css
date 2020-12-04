@@ -9,7 +9,8 @@
   --brand-green: #14552a;
   --green-shade: #124c25;
   --green-tint-light: #9dd1ab;
-  --green-tint-dark :#57b273;
+  --green-tint-dark:#57b273;
+  --brand-orange: #E48525;
   --brand-grey: #30302f;
 }
 
@@ -58,6 +59,10 @@ p, h2, h3, li {
 
 .brand-green {
   color: var(--brand-green) !important;
+}
+
+.brand-orange {
+  color: var(--brand-orange) !important;
 }
 
 .brand-grey {
