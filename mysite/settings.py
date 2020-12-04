@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='jg05%sue6cb=-3879nv@!bir)l!ss
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = int(os.environ.get('DEBUG', default=0))
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'trellis-landing-page.herokuapp.com', 'test.opentrellis.org']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'trellis-landing-page.herokuapp.com', 'test.opentrellis.org', 'opentrellis.org']
 
 # Application definition
 
