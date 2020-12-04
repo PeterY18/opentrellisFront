@@ -71,6 +71,10 @@ p, h2, h3, li {
   color: var(--green-tint-light) !important;
 }
 
+.brand-green-tint-dark {
+  color: var(--green-tint-dark) !important;
+}
+
 .btn-brand {
   background-color: var(--brand-green);
   border-color: var(--brand-green);
@@ -86,6 +90,28 @@ p, h2, h3, li {
  .btn-brand-tint:hover {
   background-color: var(--green-tint-light);
   border-color: var(--green-tint-light);
+ }
+
+ .btn-brand-orange {
+  color:#fff !important;
+  background-color: var(--brand-orange);
+  border-color: var(--brand-orange);
+  font-family: Poppins;
+}
+ .btn-brand-orange:hover {
+  background-color: var(--brand-orange);
+  border-color: var(--brand-orange);
+ }
+
+ .btn-brand-green {
+  color:#fff !important;
+  background-color: var(--brand-green);
+  border-color: var(--brand-green);
+  font-family: Poppins;
+}
+ .btn-brand-green:hover {
+  background-color: var(--brand-green);
+  border-color: var(--brand-green);
  }
 
 .btn-brand:hover {
@@ -248,6 +274,18 @@ p, h2, h3, li {
 .nav-link-hover:link {
   text-decoration: none;
 }
+
+.tab-link {
+  transition: background-color 0.25s ease-in-out 0s !important;
+  border-radius: 8px !important;
+  text-decoration: none;
+  text-decoration-color: var(--green-shade);
+  text-underline-position: under;
+  color: var(--green-tint-dark) !important;
+  padding: 10px 20px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{color:#fff !important;background-color: var(--green-tint-dark)}
 
 .nav-item {
   padding-left: 15px !important;
