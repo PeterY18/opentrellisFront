@@ -31,3 +31,6 @@ def about(request):
 
 def team(request):
     return render(request, 'opentrellisFront/team.html', {})
+
+def alumni(request):
+    return render(request, 'opentrellisFront/alumni.html', {})
