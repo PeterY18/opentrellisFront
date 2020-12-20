@@ -123,9 +123,13 @@ p, h2, h3, li {
   background-color: white;
 }
 
-.img {
-  width: 100%;
-  height: auto;
+.img-container {
+  height: 300px;
+}
+
+.img-container img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .rem-1-5 {
@@ -172,7 +176,7 @@ p, h2, h3, li {
   margin-bottom: 1.25rem;
   font-weight: 500;
   font-family: Poppins-Bold;
-  colo: var(--brand-green);
+  color: var(--brand-green);
 }
 
 .lead {
@@ -182,6 +186,16 @@ p, h2, h3, li {
   font-weight: 400;
   font-family: Poppins;
   color: var(--brand-grey) !important;
+}
+
+.brand-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.brand-title-sm {
+  font-size: 1.4rem   ;
 }
 
 .hero-trellis-image {

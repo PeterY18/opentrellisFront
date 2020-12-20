@@ -14,36 +14,58 @@
             </div>
         </div>
         <div class="container text-center col-lg-4 mx-auto" data-aos="fade-left" data-aos-duration="1200">
-            <img class="hero-trellis-image d-none d-lg-block" src="{% static 'img/trellis-with-plants.png' %}" alt="Grow with us">
+            <img class="hero-trellis-image d-none d-lg-block" src="{% static 'img/home_page/trellis-with-plants.png' %}" alt="Grow with us">
         </div>
     </div>
 </div>
-<div class="container">
+
+<!-- Only show this on small screens -->
+<div class="container d-md-block d-lg-none mt-3">
     <div class="row">
-        <div class="mx-auto mt-4">
-            <img src="{% static 'img/sponsor_banner/banner_transparent_v2.png' %}" height="100%" width="100%" alt="Our sponsors">
+        <h2 class="brand-title-sm brand-green poppins-bold mx-auto">Sponsored By</h2>
+        <div class="mx-auto">
+            <img src="{% static 'img/sponsor_banner/banner_transparent_v4.png' %}" height="100%" width="100%" alt="Our sponsors">
+        </div>
+        <h2 class="brand-green brand-title-sm poppins-bold mx-auto pt-2">Featured On</h2>
+        <div class="mx-auto">
+            <img src="{% static 'img/sponsor_banner/featured_on.svg' %}" height="100%" width="100%" alt="Featured on Wallstreet Journal and The Richmond Times-Dispatch">
+        </div>
+    </div>
+</div>
+<!-- End -->
+
+<div class="container d-none d-lg-block">
+    <div class="row">
+        <h2 class="brand-green brand-title poppins-bold mx-auto">Sponsored By</h2>
+        <div class="mx-auto">
+            <img src="{% static 'img/sponsor_banner/banner_transparent_v4.png' %}" height="100%" width="100%" alt="Our sponsors">
+        </div>
+        <h2 class="brand-green brand-title poppins-bold mx-auto pt-4">Featured On</h2>
+        <div class="mx-auto">
+            <img src="{% static 'img/sponsor_banner/featured_on.svg' %}" height="100%" width="100%" alt="Featured on Wallstreet Journal and The Richmond Times-Dispatch">
         </div>
     </div>
 </div>
 </header>
+
 <section id="core-points" class="bg-light">
 <!-- Only show this on small screens -->
 <div class="d-md-block d-lg-none">
     <div class="col-lg-4 text-center">
         <div class="text-center three-points-font-size-sm mb-5">
-            <h1 class="three-points-header-sm"><a class="brand-orange" href="https://www.meetup.com/1mcrva/">Connecting</a></h1>
+            <h1 class="three-points-header-sm"><a class="brand-orange" href="https://www.meetup.com/1mcrva/">Connect</a></h1>
             <p class="lead">Build a network of support</p>
         </div>
         <div class="three-points-font-size-sm mb-5">
-            <h1 class="three-points-header-sm"><a class="brand-green" href="/learning/">Learning</a></h1>
+            <h1 class="three-points-header-sm"><a class="brand-green" href="/learn/">Learn</a></h1>
             <p class="lead">Learn business skills</p>
         </div>
         <div class="three-points-font-size-sm mb-5">
-            <h1 class="three-points-header-sm"><a class="brand-orange" href="/lending/">Lending</a></h1>
+            <h1 class="three-points-header-sm"><a class="brand-orange" href="/borrow/">Borrow</a></h1>
             <p class="lead">Apply for a business loan</p>
         </div>
         <div class="three-points-font-size-sm">
-            <h1 class="three-points-header-sm"><a class="brand-green" href="/investing/">Investing</a></h1>
+            <h1 class="three-points-header-sm"><a class="brand-green" href="/invest/">Invest</a></h1>
             <p class="lead">Help new businesses thrive</p>
         </div>
     </div>
@@ -53,24 +75,24 @@
     <div class="row align-items-center text-dark">
         <div class="col-lg-4 text-center">
             <div class="text-center pb-20 three-points-font-size">
-                <h1 class="three-points-header"><a class="brand-orange" href="https://www.meetup.com/1mcrva/">Connecting</a></h1>
+                <h1 class="three-points-header"><a class="brand-orange" href="https://www.meetup.com/1mcrva/">Connect</a></h1>
                 <p class="lead">Build a network of support</p>
             </div>
             <div class="three-points-font-size">
-                <h1 class="three-points-header"><a class="brand-green" href="/lending/">Lending</a></h1>
+                <h1 class="three-points-header"><a class="brand-green" href="/borrow/">Borrow</a></h1>
                 <p class="lead">Apply for a business loan</p>
             </div>
         </div>
         <div class="col-lg-4 mx-auto text-center">
-            <img class="img d-none d-lg-block" src="{% static 'img/trellis-3-points.png' %}" alt="" data-aos="zoom-in-down" data-aos-duration="1400">
+            <img class="img d-none d-lg-block" src="{% static 'img/home_page/trellis-3-points.svg' %}" alt="" data-aos="zoom-in-down" data-aos-duration="1400">
         </div>
         <div class="col-lg-4">
             <div class="text-center pb-20 three-points-font-size">
-                <h1 class="three-points-header"><a class="brand-green" href="/learning/">Learning</a></h1>
+                <h1 class="three-points-header"><a class="brand-green" href="/learn/">Learn</a></h1>
                 <p class="lead">Learn business skills</p>
             </div>
             <div class="text-center three-points-font-size">
-                <h1 class="three-points-header"><a class="brand-orange" href="/investing/">Investing</a></h1>
+                <h1 class="three-points-header"><a class="brand-orange" href="/invest/">Invest</a></h1>
                 <p class="lead">Help new businesses thrive</p>
             </div>
         </div>
@@ -83,7 +105,7 @@
     <div class="row">
         <div class="col-lg-12 mx-auto">
             <h2 class="text-center section-title brand-green mb-5">Watch our story</h2>
-            <iframe class="video-shadow rounded" width="100%" height="625" src="https://www.youtube.com/embed/tX6CoyWwYcg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video-shadow rounded" width="100%" height="625" src="https://www.youtube.com/embed/L65xTaZCPN8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 </div>
