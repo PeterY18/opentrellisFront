@@ -20,9 +20,6 @@ def investing(request):
 def apply(request):
     return render(request, 'opentrellisFront/apply.html', {})
 
-def received(request):
-    return render(request, 'opentrellisFront/received.html', {})
-
 def legal(request):
     return render(request, 'opentrellisFront/legal.html', {})
 
