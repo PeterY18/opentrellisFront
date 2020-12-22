@@ -8,14 +8,14 @@ def index(request):
 def home(request):
     return render(request, 'opentrellisFront/home.html', {})
 
-def learning(request):
-    return render(request, 'opentrellisFront/learning.html', {})
+def learn(request):
+    return render(request, 'opentrellisFront/learn.html', {})
 
-def lending(request):
-    return render(request, 'opentrellisFront/lending.html', {})
+def borrow(request):
+    return render(request, 'opentrellisFront/borrow.html', {})
 
-def investing(request):
-    return render(request, 'opentrellisFront/investing.html', {})
+def invest(request):
+    return render(request, 'opentrellisFront/invest.html', {})
 
 def apply(request):
     return render(request, 'opentrellisFront/apply.html', {})

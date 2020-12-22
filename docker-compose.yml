@@ -7,5 +7,6 @@ services:
     container_name: trellis-lp-web
     environment:
       - PORT=8765
+      - DEBUG=1
     ports:
       - "8007:8765"
